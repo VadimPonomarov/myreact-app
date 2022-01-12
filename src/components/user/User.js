@@ -1,12 +1,19 @@
 import {React} from 'react';
+
 import Posts from "../posts/Posts";
 
 function User(props) {
-    let {id = '', name = '', username = '', website = '', phone = '', email = '', address = '', company = '', comments} = props;
-
-    const handlePosts = postId => {
-        console.log(postId)
-    }
+    const {
+        id = '',
+        name = '',
+        username = '',
+        website = '',
+        phone = '',
+        email = '',
+        address = '',
+        company = '',
+        comments
+    } = props;
 
     return (
         <div className={'d-flex p-2 border'}>
@@ -32,11 +39,8 @@ function User(props) {
                 <div>CatchPhrase: {company.catchPhrase}</div>
             </div>
             <div className={'col-6'}>
-                <Posts userId={id} handlePosts={handlePosts} comments={comments}/>
+                <Posts userId={id} comments={comments}/>
             </div>
-            {/*<div className={'col-12'}>
-            <h1>jhkhjmk</h1>
-            </div>*/}
         </div>
     );
 }
