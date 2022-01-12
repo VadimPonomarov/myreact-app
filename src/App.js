@@ -1,9 +1,13 @@
-import './App.css';
 import React from 'react';
+
+import './App.css';
+import Launches from './components/spaceX_launches/Launches'
 
 function App() {
     return (
-     <h1>Hello React</h1>
+        <>
+            <Launches/>
+        </>
     )
 }
 
