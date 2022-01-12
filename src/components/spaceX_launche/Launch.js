@@ -9,7 +9,7 @@ function SpaceXLaunch({mission_name, launch_year, mission_patch}) {
                 <div>{launch_year}</div>
             </div>
             <div className={'d-flex col-8 justify-content-center'}>
-                <img src={mission_patch} style={{width: '150px', height: 'auto'}} alt='Mission-patch' />
+                <img src={mission_patch} style={{width: '150px', height: 'auto'}} alt='Mission-patch'/>
             </div>
 
         </div>
