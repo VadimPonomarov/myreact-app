@@ -2,7 +2,7 @@ import {React, useState, useEffect} from 'react';
 
 import myUrls from '../../cnf/cnf.my'
 import commons from '../../services/common.service'
-import User from '../User'
+import User from '../user/User'
 
 function Users(props) {
     const [users, setUsers] = useState([])
